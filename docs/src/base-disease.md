@@ -19,14 +19,14 @@ After this, they can stay without symptoms (resulting in asymptomatic cases) or 
 Throughout GEMS we use the term "removed" for the state of an individual leaving a disease progression, either by recovering or by dying.
 GEMS categorizes disease states internally using symbols (e.g., `:Mild`, `:Critical`). Depending on the peak severity an individual reaches, we can categorize the infected individuals into the following progression tracks:
 
-| **Symptoms Category** | **Terminal State** |
+| **Symptoms Category** | **Peak Severity** |
 | :-------------------- | :----------------- |
 | Asymptomatic          | Presymptomatic     |
 | Mild                  | Symptomatic        |
 | Severe                | Severe             |
 | Critical              | Critical           |
 
-As the symptom category and terminal state are closely related, the terms "exposed" and "asymptomatic" might be used synonymously, as well as "mild" and "symptomatic".
+As the symptom category and peak severity are closely related, the terms "exposed" and "asymptomatic" might be used synonymously, as well as "mild" and "symptomatic".
 
 Host-level care and mortality (hospitalization, ICU, ventilation, death) are **not** part of the
 disease progression: they are decided by a separate `HealthProgression`, which folds the demand of
